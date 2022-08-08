@@ -30,6 +30,5 @@ let author = "Patrick Rothfuss";
 let pageCount = 722;
 let bookmark = 456;
 let hasRead = true;
-let hasReadTranslator = hasRead == true ? "have read" : "have not read";
 let ex5 = document.getElementById('ex5');
-ex5.innerHTML = `${title} by ${author} has ${pageCount} pages. <br>I ${hasReadTranslator} ${title} up to page ${bookmark}`;
+ex5.innerHTML = `${title} by ${author} has ${pageCount} pages. <br>I ${hasRead == true ? "have read" : "have not read"} ${title} up to page ${bookmark}`;
